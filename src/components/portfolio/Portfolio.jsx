@@ -23,7 +23,7 @@ export default function Portfolio() {
       title: "Programming",
     },
     {
-      id: "aeromodelling", //programs
+      id: "aeromodelling",
       title: "Aeromodelling",
     },
     {
