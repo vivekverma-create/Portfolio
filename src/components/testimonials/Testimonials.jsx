@@ -7,7 +7,7 @@ export default function Testimonials() {
       name: "Tom",
       title: "Senior Developer",
       img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "assets/tom.jpeg",
       icon: "assets/twitter.png",
       desc:
         "Writing.....",
@@ -17,7 +17,7 @@ export default function Testimonials() {
       name: "Alex",
       title: "Co-Founder XYZ",
       img:
-        "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "assets/alex.jpeg",
       icon: "assets/youtube.png",
       desc:
         "Writing...... ",
@@ -28,7 +28,7 @@ export default function Testimonials() {
       name: "Martin",
       title: "CEO",
       img:
-        "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "assets/martin.jpeg",
       icon: "assets/linkedin.png",
       desc:
         "Writing...... ",
