@@ -7,6 +7,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
     setMessage(true);
     emailjs.sendForm('service_67olw5a', 'template_uhs2uyp', e.target, 'user_ZBIhxVbq6TsXbY98uVjZb')
       .then((result) => {
@@ -26,9 +27,9 @@ export default function Contact() {
       <div className="right">
         <h2>Contact.</h2>
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Name" name="name"/>
-          <input type="text" placeholder="Email"  name="email"/>
-          <textarea placeholder="Message" name="message"></textarea>
+          <input type="text" placeholder="Name" name="name" required/>
+          <input type="email" placeholder="Email"  name="email" required/>
+          <textarea placeholder="Message" name="message" required></textarea>
           <button type="submit">Send</button>
           {message && <span>Thanks, I'll reply ASAP :)</span>}
         </form>

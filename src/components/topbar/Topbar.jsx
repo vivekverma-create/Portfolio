@@ -10,16 +10,18 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             Vivek.
           </a>
           <div className="itemContainer">
-            <Person className="icon" />
-            <span><a href="tel:+61481152128">+61 481 152 128</a></span>
+            <a href="tel:+61481152128">
+              <Person className="icon" />
+              <span>+61 481 152 128</span></a>
           </div>
           <div className="itemContainer">
-            <Mail className="icon" />
-            <span><a href="mailto:vivekverma326@gmail.com">vivekverma326@gmail.com</a></span>
+            <a href="mailto:vivekverma326@gmail.com">
+              <Mail className="icon" />
+              <span>vivekverma326@gmail.com</span></a>
           </div>
         </div>
         <div className="right">
-          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
