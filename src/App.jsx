@@ -48,11 +48,11 @@ function App() {
             </div>
           </Route>
 
-          <Route path="/Abitha">
+          {/* <Route path="/Abitha">
           <div className="sections">
             < Abitha/>
             </div>
-          </Route>
+          </Route> */}
 
           
           <Route path="/Parents">
