@@ -19,28 +19,35 @@ export const programmingPortfolio = [
 export const webPortfolio = [
   {
     id: 1,
+    title: "GovHack 2021",
+    img: "assets/transport_govhack.JPG",
+    link: "https://github.com/vivekverma-create/GovHack",
+  },
+  {
+    id: 2,
     title: "NBA Stats Explorer",
     img: "assets/NBA.jpg",
     link: "http://visualise-data.herokuapp.com/",
   },
   {
-    id: 2,
+    id: 3,
     title: "SP500 Stocks",
     img: "assets/stocks.jpg",
     link: "http://visualise-data.herokuapp.com/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Covid-19",
     img: "assets/covid.jpg",
     link: "http://visualise-data.herokuapp.com/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Data Checker",
     img: "assets/data-checker.jpg",
     link: "http://visualise-data.herokuapp.com/",
   },
+  
 ];
 
 export const aeromodellingPortfolio = [
@@ -48,7 +55,7 @@ export const aeromodellingPortfolio = [
     id: 1,
     title: "Quadcopter",
     img:
-      "assets/quad.jpg",
+      "assets/quad.j`pg",
   },
   {
     id: 2,

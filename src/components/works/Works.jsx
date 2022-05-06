@@ -4,33 +4,52 @@ import "./works.scss";
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
+    
     {
       id: "1",
-      icon: "./assets/mobile.png",
-      title: "Web Application",
+      icon: "./assets/globe.png",
+      title: "Team Award",
       desc:
-        "Get in Touch for more details ",
+        " ",
       img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+        "https://raw.githubusercontent.com/vivekverma-create/images/main/Team%20Award.jpg",
     },
     {
       id: "2",
       icon: "./assets/globe.png",
-      title: "Programming",
+      title: "Infosys Insta Award",
       desc:
-        "Get in Touch for more details",
+        " ",
       img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        "https://raw.githubusercontent.com/vivekverma-create/images/main/InstaAward.png",
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
-      title: "Research",
+      icon: "./assets/mobile.png",
+      title: "Gov Hack 2021",
       desc:
-        "Get in Touch for more details",
+        " ",
       img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        "https://raw.githubusercontent.com/vivekverma-create/images/main/GovHack2021.jpg",
     },
+    {
+      id: "4",
+      icon: "./assets/writing.png",
+      title: "Certificate",
+      desc:
+        "New Relic Programmability",
+      img:
+        "https://raw.githubusercontent.com/vivekverma-create/images/main/New_Relic_Programmability.jpg",
+    },
+    {
+      id: "5",
+      icon: "./assets/writing.png",
+      title: "Certificate",
+      desc:
+        "New Relic Observability",
+      img:
+        "https://raw.githubusercontent.com/vivekverma-create/images/main/New_Relic_Fullstack.jpg",
+    }
   ];
 
   const handleClick = (way) => {
@@ -55,12 +74,12 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  {/* <span>Projects</span> */}
                 </div>
               </div>
               <div className="right">
                 <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                  src={d.img}
                   alt=""
                 />
               </div>

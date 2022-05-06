@@ -26,23 +26,31 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+        @include mobile{
+          margin-right: 0px;
+        }
       }
 
       .itemContainer {
         display: flex;
         align-items: center;
         margin-left: 30px;
+        @include mobile{
+          margin-left: 15px;
+        }
 
         
 
         .icon {
-          font-size: 18px;
+          font-size: 24px;
           margin-right: 5px;
+
         }
 
         span {
           font-size: 15px;
           font-weight: 500;
+          
           @include mobile{
             display: none;
             
