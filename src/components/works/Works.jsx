@@ -96,13 +96,13 @@ export default function Works() {
         ))}
       </div>
       <img
-        src="assets/arrow.png"
+        src="https://raw.githubusercontent.com/vivekverma-create/images/main/arrow.png"
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/arrow.png"
+        src="https://raw.githubusercontent.com/vivekverma-create/images/main/arrow.png"
         className="arrow right"
         alt=""
         onClick={() => handleClick()}
