@@ -12,9 +12,9 @@
     position: absolute;
     cursor: pointer;
 
-    @include mobile {
-      display: none;
-    }
+    // @include mobile {
+    //   display: none;
+    // }
 
     &.left {
       left: 100px;
@@ -36,6 +36,7 @@
     @include mobile {
       height: 90vh;
       flex-direction: column;
+      flex-wrap: wrap;
       justify-content: center;
     }
 

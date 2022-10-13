@@ -4,9 +4,17 @@ import "./works.scss";
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
-    
     {
       id: "1",
+      icon: "./assets/globe.png",
+      title: "Insta Award",
+      desc:
+        " ",
+      img:
+        "https://raw.githubusercontent.com/vivekverma-create/images/main/insta%20award%202.png",
+    },
+    {
+      id: "2",
       icon: "./assets/globe.png",
       title: "Team Award",
       desc:
@@ -15,7 +23,7 @@ export default function Works() {
         "https://raw.githubusercontent.com/vivekverma-create/images/main/Team%20Award.jpg",
     },
     {
-      id: "2",
+      id: "3",
       icon: "./assets/globe.png",
       title: "Infosys Insta Award",
       desc:
@@ -24,7 +32,7 @@ export default function Works() {
         "https://raw.githubusercontent.com/vivekverma-create/images/main/InstaAward.png",
     },
     {
-      id: "3",
+      id: "4",
       icon: "./assets/mobile.png",
       title: "Gov Hack 2021",
       desc:
@@ -33,7 +41,7 @@ export default function Works() {
         "https://raw.githubusercontent.com/vivekverma-create/images/main/GovHack2021.jpg",
     },
     {
-      id: "4",
+      id: "5",
       icon: "./assets/writing.png",
       title: "Certificate",
       desc:
@@ -42,7 +50,7 @@ export default function Works() {
         "https://raw.githubusercontent.com/vivekverma-create/images/main/New_Relic_Programmability.jpg",
     },
     {
-      id: "5",
+      id: "6",
       icon: "./assets/writing.png",
       title: "Certificate",
       desc:
