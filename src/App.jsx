@@ -7,7 +7,7 @@ import Contact from "./components/contact/Contact"
 import "./app.scss"
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
-import Abitha from "./components/Abitha/Abitha"
+// import Abitha from "./components/Abitha/Abitha"
 import Parents from "./components/Parents/Parents"
 import {
   BrowserRouter as Router,
@@ -25,7 +25,7 @@ function App() {
 
       <Router>
         <Switch>
-          <Route path="/Portfolio">
+          <Route path="/">
           <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <div className="sections">
               <Intro />
