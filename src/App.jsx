@@ -1,13 +1,12 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro"
 import Portfolio from "./components/portfolio/Portfolio"
-import Works from "./components/works/Works"
+import Awards from "./components/awards/Awards"
 import Testimonials from "./components/testimonials/Testimonials"
 import Contact from "./components/contact/Contact"
 import "./app.scss"
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
-// import Abitha from "./components/Abitha/Abitha"
 import Parents from "./components/Parents/Parents"
 import {
   BrowserRouter as Router,
@@ -30,7 +29,7 @@ function App() {
             <div className="sections">
               <Intro />
               <Portfolio />
-              <Works />
+              <Awards />
               {/* <Testimonials/> */}
               <Contact />
             </div>
