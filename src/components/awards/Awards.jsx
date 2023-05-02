@@ -5,16 +5,34 @@ export default function Awards() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
+      id: "8",
+      icon: "./assets/globe.png",
+      title: "Insta Award - 4",
+      desc:
+        " ",
+      img:
+        "https://raw.githubusercontent.com/vivekverma-create/images/main/insta%20award%204.png",
+    },
+    {
       id: "1",
       icon: "./assets/globe.png",
-      title: "Insta Award",
+      title: "Insta Award - 3",
+      desc:
+        " ",
+      img:
+        "https://raw.githubusercontent.com/vivekverma-create/images/main/insta%20award%203.png",
+    },
+    {
+      id: "2",
+      icon: "./assets/globe.png",
+      title: "Insta Award - 2",
       desc:
         " ",
       img:
         "https://raw.githubusercontent.com/vivekverma-create/images/main/insta%20award%202.png",
     },
     {
-      id: "2",
+      id: "3",
       icon: "./assets/globe.png",
       title: "Team Award",
       desc:
@@ -23,16 +41,16 @@ export default function Awards() {
         "https://raw.githubusercontent.com/vivekverma-create/images/main/Team%20Award.jpg",
     },
     {
-      id: "3",
+      id: "4",
       icon: "./assets/globe.png",
-      title: "Infosys Insta Award",
+      title: "Insta Award - 1",
       desc:
         " ",
       img:
         "https://raw.githubusercontent.com/vivekverma-create/images/main/InstaAward.png",
     },
     {
-      id: "4",
+      id: "5",
       icon: "./assets/mobile.png",
       title: "Gov Hack 2021",
       desc:
@@ -41,7 +59,7 @@ export default function Awards() {
         "https://raw.githubusercontent.com/vivekverma-create/images/main/GovHack2021.jpg",
     },
     {
-      id: "5",
+      id: "6",
       icon: "./assets/writing.png",
       title: "Certificate",
       desc:
@@ -50,7 +68,7 @@ export default function Awards() {
         "https://raw.githubusercontent.com/vivekverma-create/images/main/New_Relic_Programmability.jpg",
     },
     {
-      id: "6",
+      id: "7",
       icon: "./assets/writing.png",
       title: "Certificate",
       desc:

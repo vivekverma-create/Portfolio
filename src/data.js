@@ -55,7 +55,7 @@ export const aeromodellingPortfolio = [
     id: 1,
     title: "Quadcopter",
     img:
-      "assets/quad.j`pg",
+      "assets/quad.jpg",
   },
   {
     id: 2,

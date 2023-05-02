@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed:60,
-      strings: ["(Developer)","(Engineer)","(Tech Enthusiast)"],
+      strings: ["(Developer)","(NewRelic Engineer)","(Splunk Enthusiast)"],
     });
   }, []);
 
@@ -18,7 +18,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="https://raw.githubusercontent.com/vivekverma-create/images/main/vivek2.png" alt="" />
+          <img src="https://raw.githubusercontent.com/vivekverma-create/images/main/vivek_new.jpg" alt="Vivek_image" />
         </div>
       </div>
       <div className="right">
