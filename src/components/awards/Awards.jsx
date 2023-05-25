@@ -1,89 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./awards.scss";
 
-export default function Awards() {
+const Awards = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const data = [
-    {
-      id: "8",
-      icon: "./assets/globe.png",
-      title: "Insta Award - 4",
-      desc:
-        " ",
-      img:
-        "https://raw.githubusercontent.com/vivekverma-create/images/main/insta%20award%204.png",
-    },
-    {
-      id: "1",
-      icon: "./assets/globe.png",
-      title: "Insta Award - 3",
-      desc:
-        " ",
-      img:
-        "https://raw.githubusercontent.com/vivekverma-create/images/main/insta%20award%203.png",
-    },
-    {
-      id: "2",
-      icon: "./assets/globe.png",
-      title: "Insta Award - 2",
-      desc:
-        " ",
-      img:
-        "https://raw.githubusercontent.com/vivekverma-create/images/main/insta%20award%202.png",
-    },
-    {
-      id: "3",
-      icon: "./assets/globe.png",
-      title: "Team Award",
-      desc:
-        " ",
-      img:
-        "https://raw.githubusercontent.com/vivekverma-create/images/main/Team%20Award.jpg",
-    },
-    {
-      id: "4",
-      icon: "./assets/globe.png",
-      title: "Insta Award - 1",
-      desc:
-        " ",
-      img:
-        "https://raw.githubusercontent.com/vivekverma-create/images/main/InstaAward.png",
-    },
-    {
-      id: "5",
-      icon: "./assets/mobile.png",
-      title: "Gov Hack 2021",
-      desc:
-        " ",
-      img:
-        "https://raw.githubusercontent.com/vivekverma-create/images/main/GovHack2021.jpg",
-    },
-    {
-      id: "6",
-      icon: "./assets/writing.png",
-      title: "Certificate",
-      desc:
-        "New Relic Programmability",
-      img:
-        "https://raw.githubusercontent.com/vivekverma-create/images/main/New_Relic_Programmability.jpg",
-    },
-    {
-      id: "7",
-      icon: "./assets/writing.png",
-      title: "Certificate",
-      desc:
-        "New Relic Observability",
-      img:
-        "https://raw.githubusercontent.com/vivekverma-create/images/main/New_Relic_Fullstack.jpg",
-    }
-  ];
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://api.github.com/repos/vivekverma-create/assets/contents/awards.json"
+        );
+        const jsonData = await response.json();
+        const content = atob(jsonData.content);
+        const parsedData = JSON.parse(content);
+        setData(parsedData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
-      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
+      ? setCurrentSlide((prevSlide) => (prevSlide > 0 ? prevSlide - 1 : data.length - 1))
+      : setCurrentSlide((prevSlide) => (prevSlide < data.length - 1 ? prevSlide + 1 : 0));
   };
-  
+
   return (
     <div className="awards" id="awards">
       <div
@@ -91,7 +36,7 @@ export default function Awards() {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
-          <div className="container">
+          <div className="container" key={d.id}>
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
@@ -100,14 +45,10 @@ export default function Awards() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  {/* <span>Projects</span> */}
                 </div>
               </div>
               <div className="right">
-                <img
-                  src={d.img}
-                  alt=""
-                />
+                <img src={d.img} alt="" />
               </div>
             </div>
           </div>
@@ -127,4 +68,6 @@ export default function Awards() {
       />
     </div>
   );
-}
+};
+
+export default Awards;

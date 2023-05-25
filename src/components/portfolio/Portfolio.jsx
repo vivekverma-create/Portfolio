@@ -7,13 +7,23 @@ import {
   aeromodellingPortfolio,
   electronicsPortfolio,
   roboticsPortfolio,
-  researchPortfolio
+  researchPortfolio,
+  NewRelicPortfolio,
+  SplunkPortfolio
 } from "../../data";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("web");
+  const [selected, setSelected] = useState("NewRelic");
   const [data, setData] = useState([]);
   const list = [
+    {
+      id: "NewRelic",
+      title: "New Relic",
+    },
+    {
+      id: "Splunk",
+      title: "Splunk",
+    },
     {
       id: "web",
       title: "Web App",
@@ -42,6 +52,12 @@ export default function Portfolio() {
 
   useEffect(() => {
     switch (selected) {
+      case "NewRelic":
+        setData(NewRelicPortfolio);
+        break;
+        case "Splunk":
+        setData(SplunkPortfolio);
+        break;
       case "programming":
         setData(programmingPortfolio);
         break;
@@ -61,7 +77,7 @@ export default function Portfolio() {
         setData(researchPortfolio);
         break;
       default:
-        setData(webPortfolio);
+        setData(NewRelicPortfolio);
     }
   }, [selected]);
 

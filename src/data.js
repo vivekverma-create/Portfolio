@@ -120,3 +120,28 @@ export const researchPortfolio = [
       link:"https://drive.google.com/file/d/1AmlO6vKtbiUg35LK2CfYLYJ9zEKDljbc/view?usp=sharing"
   }
 ];
+export const NewRelicPortfolio = [
+  {
+    id: 1,
+    title: "Observability",
+    img:
+      "https://raw.githubusercontent.com/vivekverma-create/images/main/NewRelic%20Observability%20badge.png",
+      link:"https://credentials.newrelic.com/9a7879e4-e6af-4cb9-b8c6-8509fab98c64#gs.ykz9bm"
+  },
+  {
+    id: 2,
+    title: "Programmability",
+    img:
+      "https://raw.githubusercontent.com/vivekverma-create/images/main/NewRelic%20Programmability%20badge.png",
+      link:"https://credentials.newrelic.com/6b1c8fb9-a2f0-4027-82b9-0b04fd878e91"
+  }
+];
+export const SplunkPortfolio = [
+  {
+    id: 1,
+    title: "Power User",
+    img:
+      "https://raw.githubusercontent.com/vivekverma-create/images/main/splunk%20power%20user%20badge.png",
+      link:"https://udemy-certificate.s3.amazonaws.com/image/UC-5ab7729f-10d3-4eed-8865-49478faff592.jpg?v=1684222015000"
+  }
+];
