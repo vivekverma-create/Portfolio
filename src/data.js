@@ -132,16 +132,23 @@ export const NewRelicPortfolio = [
     id: 2,
     title: "Programmability",
     img:
-      "https://raw.githubusercontent.com/vivekverma-create/images/main/NewRelic%20Programmability%20badge.png",
+      "https://newrelic.com/sites/default/files/styles/1200w/public/2021-06/programmability-certification.png?itok=6l_lC0lg",
       link:"https://credentials.newrelic.com/6b1c8fb9-a2f0-4027-82b9-0b04fd878e91"
   }
 ];
 export const SplunkPortfolio = [
   {
+    id: 2,
+    title: "Certified Core User",
+    img:
+      "https://www.splunk.com/content/dam/splunk2/en_us/images/training/training-course-track-core-certified-user-header-fg.png",
+      link:"https://www.credly.com/badges/feaf0ed6-b241-4e82-9918-38a19047e663/public_url"
+  },
+  {
     id: 1,
     title: "Power User",
     img:
-      "https://raw.githubusercontent.com/vivekverma-create/images/main/splunk%20power%20user%20badge.png",
+      "https://www.splunk.com/content/dam/splunk2/en_us/images/training/training-course-track-core-certified-power-user-header-fg.png",
       link:"https://udemy-certificate.s3.amazonaws.com/image/UC-5ab7729f-10d3-4eed-8865-49478faff592.jpg?v=1684222015000"
   }
 ];
